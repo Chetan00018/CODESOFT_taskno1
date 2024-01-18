@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:gilroy;
+}
+
+html,body {
+height: 100%;
+width:100%;
+}
+body{
+
+background: #9C9892;
+background: conic-gradient(from 315deg, #9C9892, #CDDACA);
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color:#D0D4D5; */
+    position: relative;
+}
+
+#nav
+{
+    height: 90px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+   height: 200px; 
+   width: 200px;
+   margin-right: 100px;
+   margin-left: 10px;
+   mix-blend-mode: color-burn;
+   object-fit: contain;
+}
+ 
+#navpart1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+#navpart1 a{
+    margin: 30px;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+}
+#navpart2 i{
+margin-right: 50px;
+font-size: 22px;
+}
+
+.content{
+    width: 100%;
+   display: flex;
+    height:calc(100% - 90px);
+    /* position: relative; */
+}
+#left{
+    width: 40%;
+    height: 100%;
+  padding: 70px 100px;
+}
+#left h4{
+    color: #424545;
+    font-size: large;
+    margin-bottom: 20px;
+}
+#left h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#left p{
+    font-size: 14x;
+    width: 100%;
+    margin-bottom: 30px;
+    
+    
+}
+#left button{
+background-color:black;
+color: white;
+font-size: 17px;
+font-weight: 500;
+border-radius: 50px;
+padding: 15px 40px;
+text-transform: uppercase;
+}
+#right{
+    width: 60%;
+    height: 100%;
+     padding: 80px;
+     white-space: nowrap;
+     overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+    display: none;
+}
+
+.element{
+    height: 380px;
+    width: 280px;
+    background-color:#D0D4D5;
+    position: relative;
+    box-shadow: 0 10px 10px rgb(0, 0, 0,0.5);
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.element img{
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    /* top: 40px; */
+}
+
+.element h4{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px 15px;
+    background-color: #D0D4D5;
+    border-radius: 10px;
+}
+.element h5{
+    position: absolute;
+    bottom: 10%;
+    right: 0px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+@media(max-width:1150px) {
+    .content  #left{
+        margin-left: 10px;
+       margin-top: 100px;
+        padding-left: 10px;
+    }
+    #navpart1 a{
+        display: none;
+    }
+    #left  p,h4{
+        display: none;
+       
+    }
+    
+    #left h2{
+        font-size: 25px;   
+    }
+    
+}
+@media(max-width:470px){
+ #navpart2 i{
+        display: block;
+    }
+}
